@@ -16,3 +16,5 @@
 (defn largest-factor [n]
   "Find largest factor of n. Uses Sieve of Erastotenes."
   (last (filter #(is-div? n %) (primes (Math/sqrt n)))))
+
+(println (largest-factor 600851475143))
